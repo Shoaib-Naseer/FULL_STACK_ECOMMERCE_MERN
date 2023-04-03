@@ -1,0 +1,44 @@
+/* FOOTER STYLING */
+
+footer{
+    background-color: var(--bg-light-dark);
+    color: white;
+  }
+
+  footer:not(:first-child){
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+ 
+  .footer-ul > li{
+    padding-bottom: 8px;
+  }
+  .footer-ul > li > a{
+    color: #ffff;
+  }
+  .icon{
+    text-align: center;
+    /* color: #ffff; */
+    background-color: var(--bg-gray);
+    width: 28px;
+    border-radius: 50%;
+    height: 28px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .buttons-container .btn{
+    padding: 2px 4px;
+  }
+
+  .buttons-container .btn .btn-text-container{
+    font-size: 12px;
+  }
+  .buttons-container .btn .btn-icon{
+    font-size: 25px;
+  }
+  
+
+  .payment-card{
+    font-size: 2rem;
+    margin-left: 10px;
+  }

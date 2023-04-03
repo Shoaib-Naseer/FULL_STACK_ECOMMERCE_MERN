@@ -1,0 +1,36 @@
+/* Small Banner styling */
+.small-banner{
+    width: 49%;
+    margin-bottom: 12px;
+}
+
+.small-banner-content{
+    top: 10%;
+    left:5%;
+}
+.small-banner-content h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0  0 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: var(--bg-orange);
+}
+
+.small-banner-content h5{
+    font-size: 22px;
+    line-height: 15px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: 1px ;
+}
+.small-banner-content p{
+    width: 64%;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.4;
+    color: var(--bg-dark);
+}

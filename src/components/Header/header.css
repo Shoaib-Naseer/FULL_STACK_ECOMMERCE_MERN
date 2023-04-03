@@ -1,0 +1,85 @@
+/* Header Styling */
+.header-top-strip {
+    border: 1px solid var(--bg-gray);
+}
+  
+.header-upper{
+    background-color: var(--bg-dark);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group > span{
+    padding: 6.8px 10px;
+    border-radius:0 .25rem .25rem 0;
+    cursor: pointer;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+  .icons span{
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  
+  .icon-size{
+    font-size: 1.7rem;
+    height: auto;
+    width: 45px;
+  }
+  
+  .icon-size-cart{
+    font-size: 1.6rem;
+    height: auto;
+    width: 40px;
+  }
+  .fa-cart-shopping{
+    color: var(--bg-yellow);
+  }
+  .font-small{
+    font-size: .8rem;
+  }
+  .gap-15{
+    gap: 15px;
+  }
+  .gap-30{
+    gap: 30px;
+  }
+  
+  .header-bottom menu a ,.dropdown button,.dropdown-menu li a{
+    color: white;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .3;
+    text-emphasis: none;
+    text-transform: uppercase;
+  }
+  .dropdown button{
+    box-shadow: none;
+  }
+  
+  .dropdown button:focus{
+    box-shadow: none;
+    border: none;
+  }
+  
+  .menu-icon{
+    color: white;
+  }
+  
+  .dropdown-menu{
+  width: 90%;
+  }
+  .dropdown-menu li {
+    border-bottom: 1px solid var(--color-3b4149);
+  }
+  .dropdown-menu li a{
+    padding: 5px;
+  }
+  
+  /* HEADER COMPLETES HERE */

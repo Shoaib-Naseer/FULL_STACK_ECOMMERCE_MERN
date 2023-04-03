@@ -1,0 +1,15 @@
+.category-item{
+    background-color: white;
+    width: 19.9%;
+    padding: 20px 20px;
+    margin-bottom: 2px; 
+    cursor: pointer;  
+}
+
+.category-item .item-content{
+    width: 97%;
+    align-self: center;
+}
+.category-item .item-content p,.category-item .item-content h6{
+    text-transform: capitalize;
+}

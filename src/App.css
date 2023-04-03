@@ -3,120 +3,87 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 
 :root {
-  --color-131921:#131921;
-  --color-3b4149:#3b4149;
-  --color-febd69:#febd69;
-  --color-232f3e: #232f3e;
+  --bg-dark:#131921;
+  --bg-gray:#3b4149;
+  --bg-light:#f5f5f7;
+  --bg-yellow:#febd69;
+  --bg-light-dark: #232f3e;
+  --bg-orange:#bf4800;
+  --bg-light-gray:#777777;
 }
 
 body {
   font-family: 'Rubik', sans-serif;
 }
+ul{
+  margin: 0;
+  padding: 0;
+}
 
+ul>li{
+  list-style: none;
+}
 
 a { 
   text-decoration: none;
   display: inline-block;
+  color: #fff;
 }
+p{
+  margin-bottom: 0;
+}
+/* Global Classes */
 
-/* Header Styling */
-.header-top-strip {
-  background-color: var(--color-131921);
-  border: 1px solid var(--color-3b4149);
-}
 
-.header-upper{
-  background-color: var(--color-131921);
-}
-.input-group {
-  display: flex;
-  align-items: center;
-}
-.input-group > span{
-  background-color: var(--color-febd69);
-  padding: 6.8px 10px;
-  border-radius:0 .25rem .25rem 0;
-  cursor: pointer;
-}
-.form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
-.icons span{
-  font-size: 1.2rem;
-  margin-right: 8px;
-}
-
-.icon-size{
-  font-size: 1.7rem;
-  height: auto;
-  width: 45px;
-}
-
-.icon-size-cart{
-  font-size: 1.6rem;
-  height: auto;
-  width: 40px;
-}
-.fa-cart-shopping{
-  color: var(--color-febd69);
-}
-.font-small{
-  font-size: .8rem;
-}
-
-.header-bottom {
-  background:var(--color-3b4149);
-}
-.gap-15{
-  gap: 15px;
-}
-.gap-30{
-  gap: 30px;
-}
-
-.header-bottom menu a ,.dropdown button,.dropdown-menu li a{
-  color: white;
-  line-height: 20px;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: .3;
-  text-emphasis: none;
+.text-uppercase{
   text-transform: uppercase;
 }
-.dropdown button{
-  box-shadow: none;
+
+
+.bg-dark{
+  background-color: var(--bg-dark);
+}
+.bg-gray{
+  background-color: var(--bg-gray);
+}
+.bg-light-dark{
+  background-color: var(--bg-light-dark);
+}
+.bg-yellow{
+  background-color: var(--bg-yellow);
 }
 
-.dropdown button:focus{
-  box-shadow: none;
+.b-none{
   border: none;
 }
 
-.menu-icon{
-  color: white;
+.pointer{
+  cursor: pointer;
+}
+.btn-dark{
+  background-color: var(--bg-dark);
+  color: #fff;
+  padding: 13px 33px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  transition: .3s all ease;
+}
+.btn-dark:hover{
+  background-color: var(--bg-yellow);
+  color: var(--bg-dark);
 }
 
-.dropdown-menu{
-background: var(--color-232f3e);
-width: 90%;
-}
-.dropdown-menu li {
-  border-bottom: 1px solid var(--color-3b4149);
-}
-.dropdown-menu li a{
-  padding: 5px;
-}
-
-/* HEADER COMPLETES HERE */
 
 
 
-/* FOOTER STYLING */
+/* /Global Classes */
 
-.footer-top{
-  background-color: var(--color-3b4149);
-  color: white;
-}
+
+
+

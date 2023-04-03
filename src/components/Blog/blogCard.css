@@ -1,0 +1,23 @@
+.blog-card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    overflow: hidden;
+}
+
+.blog-card .card-image{
+    width: 100%;
+}
+
+.blog-card .blog-content{
+    padding: 20px 12px;
+}
+.blog-card .blog-content p{
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--bg-light-gray);
+}
+.blog-card .blog-content h5{
+    font-size: 18px;
+    margin: 10px 0px;
+}

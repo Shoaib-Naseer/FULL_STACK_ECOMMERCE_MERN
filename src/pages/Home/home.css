@@ -1,0 +1,24 @@
+/* Styling for Home Wrapper 2 */
+.home-wrapper-2{
+    background-color: var(--bg-light);
+}
+
+/* Categories StART */
+.categories{
+    box-shadow: 0  0 10px #0000001a;
+}
+/* ENDS */
+
+.card-wrapper{
+    background-color: white;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 15px;
+}
+
+/* Feautured Collection Styling */
+.featured-products{
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
