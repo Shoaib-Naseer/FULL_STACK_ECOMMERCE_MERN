@@ -1,0 +1,50 @@
+.special-product-card{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.special-product-image-container{
+    width: 50%;
+    overflow: hidden;
+}
+
+.special-product-image-container > img{
+    max-width: 100%;
+    height: auto;
+}
+/* Action Bar Styling */
+.action-bar{
+    top: 25%;
+    right: -20px;
+    transition:all 300ms ease ;
+    cursor: pointer;
+
+}
+
+.special-product-image-container:hover .action-bar{
+    right: 10px;
+}
+
+/* Content styling */
+.special-product-content{
+width: 50%;
+}
+
+.special-product-content > .brand{
+    font-size: 16px;
+    color: var(--bg-orange);
+    font-weight: normal;
+}
+
+
+
+.special-product-content > .price span{
+    color: var(--bg-orange);
+}
+.special-product-content > .price strike{
+    opacity: .7;
+}
+
+/* Styling Timer Container */

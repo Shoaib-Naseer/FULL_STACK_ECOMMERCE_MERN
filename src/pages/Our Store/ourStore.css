@@ -1,0 +1,62 @@
+.filter-card {
+    background-color: #fff;
+    border-radius:10px ;
+    padding: 10px 15px;
+    margin-block: 10px;
+}
+
+.filter-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--bg-1c1c1b);
+    margin-block-end: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label   {
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--bg-light-gray);
+    cursor: pointer;
+}
+.filter-card .form-check-input:focus-visible{
+    box-shadow: none;
+    border-color: inherit;
+}
+
+.filter-card .form-check-input:checked {
+    background-color:var(--bg-yellow) ;
+    box-shadow: none;
+}
+
+.filter-card > ul > li{
+    text-transform: capitalize;
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-1c1c1b);
+    margin-block-end: 15px;
+}
+
+
+.colors {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.colors li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+}
+
+/*  Random Product Styling */
+/* .random-products .product-image img {
+    max-width: 100%;
+    height: auto;
+} */

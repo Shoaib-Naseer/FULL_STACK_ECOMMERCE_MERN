@@ -15,6 +15,7 @@
   --bg-light-dark: #232f3e;
   --bg-orange:#bf4800;
   --bg-light-gray:#777777;
+  --bg-1c1c1b:#1c1c1b;
 }
 
 body {
@@ -32,18 +33,29 @@ ul>li{
 a { 
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: inherit;
 }
 p{
   margin-bottom: 0;
 }
 /* Global Classes */
 
+.button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+}
+
+
 
 .text-uppercase{
   text-transform: uppercase;
 }
 
+.shadow {
+  box-shadow: 0  0 10px #0000001a;
+}
 
 .bg-dark{
   background-color: var(--bg-dark);
@@ -56,6 +68,12 @@ p{
 }
 .bg-yellow{
   background-color: var(--bg-yellow);
+}
+.bg-light {
+  background-color: var(--bg-light);
+}
+.bg-white {
+  background-color: #fff;
 }
 
 .b-none{

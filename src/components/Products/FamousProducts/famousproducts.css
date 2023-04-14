@@ -1,0 +1,49 @@
+/* Famous Products Cards styling */
+.famous-card{
+    width: 100%;
+    height: 428px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0000001a;
+}
+.famous-card  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.famous-content:nth-child(1) {
+    color: #fff;
+}
+.second-img{
+    object-position: bottom -120px right -75px;
+}
+
+.famous-content:nth-child(2){
+    color: #000;
+}
+.famous-content{
+    top: 10%;
+    left: 2%   ;
+    padding: 10px 15px;
+}
+.famous-content h5,.famous-content h6,.famous-content p {
+    color: inherit;
+}
+.famous-content h5{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.famous-content h6{
+    font-size: 24px;
+    line-height: 204x;
+    font-weight: 500;
+}
+.famous-content p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 100;
+}

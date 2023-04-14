@@ -11,6 +11,14 @@ import Service3 from '../../assets/images/service-03.png'
 import Service4 from '../../assets/images/service-04.png'
 import Service5 from '../../assets/images/service-05.png'
 
+//Image for Special Product Section
+import Watch from '../../assets/images/watch.jpg';
+
+//Images for Popular Products Section
+import Famous1 from '../../assets/images/famous-1.jpg'
+import Famous2 from '../../assets/images/famous-2.jpg'
+
+
 import Camera from '../../assets/images/camera.jpg'
 import Tv from '../../assets/images/tv.jpg'
 import SmartWatch from '../../assets/images/headphone.jpg'
@@ -26,6 +34,7 @@ import Brand8 from '../../assets/images/brand-08.png'
 
 import Blog1 from '../../assets/images/blog-1.jpg'
 import Product1 from '../../assets/images/watch.jpg'
+import Product2 from '../../assets/images/watch-1.jpg'
 
 import MainCat from '../../components/Banners/MainBanner/MainCat';
 import Categories from '../../components/Banners/CategoryBanner/Categories';
@@ -36,6 +45,8 @@ import BlogCard from '../../components/Blog/BlogCard';
 
 import './home.css';
 import ProductCard from '../../components/Products/FeaturedCollection/ProductCard';
+import SpecialProducts from '../../components/Products/SpecialProducts/SpecialProducts';
+import FamousProducts from '../../components/Products/FamousProducts/FamousProducts';
 
 function Home() {
 
@@ -93,13 +104,13 @@ function Home() {
     {title:"Secure Payments",desc:"100% Protected Payments",icon:Service5}
   ]
   const featured_collection =[
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
-    {image:Product1,brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
+    {image:[Product1,Product2],brand:'havelis',desc:'Kids Headphones Bulk 10 pack Multi Colored For...',rating:4,price:100},
   ]
   const marquee_logos = [
     {logo:Brand1},
@@ -117,6 +128,19 @@ function Home() {
     {img:Blog1,date:'12 JUNE 2022',title:"A Beautifull Sunday Morning",desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.... "},
     {img:Blog1,date:'13 JUNE 2022',title:"A Beautifull Sunday Morning",desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.... "},
     {img:Blog1,date:'13 JUNE 2022',title:"A Beautifull Sunday Morning",desc:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.... "},
+  ]
+  const special_products = [
+    {img:Watch,brand:'Havels',title:"Samsung Galaxy Note10+ Mobile Phone; Sim...",rating:4,price:60.00,remaining:5},
+    {img:Watch,brand:'Havels',title:"Samsung Galaxy Note10+ Mobile Phone; Sim...",rating:4,price:60.00,remaining:5},
+    {img:Watch,brand:'Havels',title:"Samsung Galaxy Note10+ Mobile Phone; Sim...",rating:4,price:60.00,remaining:5},
+    {img:Watch,brand:'Havels',title:"Samsung Galaxy Note10+ Mobile Phone; Sim...",rating:4,price:60.00,remaining:5},
+
+  ]
+  const famous_products =[
+    {prod_img:Famous1, topTitle:'big screen',mainTitle:'Smart Watch Series 7',subTitle:"From $399 or $16.62/mo. for 24 mo.*"},
+    {prod_img:Famous2, topTitle:'Studio Display',mainTitle:"600 nits of brightness",subTitle:"27 inch 5k Retina Display"},
+    {prod_img:Famous2, topTitle:'Studio Display',mainTitle:"600 nits of brightness",subTitle:"27 inch 5k Retina Display"},
+    {prod_img:Famous2, topTitle:'Studio Display',mainTitle:"600 nits of brightness",subTitle:"27 inch 5k Retina Display"},
   ]
   return (
     <>
@@ -161,11 +185,11 @@ function Home() {
       </section>
 
       {/* Main categories Listing */}
-      <section className="home-wrapper-2 py-5">
+      <section className="bg-light py-5">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="categories d-flex flex-wrap justify-content-between align-items-center">
+              <div className="categories d-flex flex-wrap justify-content-between align-items-center shadow">
                 {category_list.map((category,index)=>(
                  <CategoryListing category={category} key={index} />
                 ))}
@@ -177,10 +201,49 @@ function Home() {
       </section>
 
       {/* Featured Collections Slider */}
-      <section className="home-wrapper-2 py-5">
+      <section className="bg-light py-5">
         <div className="container">
           <h2 className='py-3'>Featured Collection</h2>
-          <div className="featured-products">
+          <div className="d-flex gap-3 flex-nowrap overflow-hidden">
+            {featured_collection.map((product,index)=>(
+              <ProductCard product={product} key={index} />
+            ))}
+            
+          </div>
+        </div>
+      </section>
+
+      {/* Special Products  */}
+      <section className="special-products py-5 bg-light">
+        <div className="container mx-auto">
+        <h2 className='py-3'>Special Products</h2>
+          <div className="row">
+            {special_products.map((product,index)=>(
+              <SpecialProducts product={product} key={index}/>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* Famous Products */}
+      <section className="famous-wrapper py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <h2 className='py-3'>Famous Products</h2>
+            {famous_products.map((famous_product,index)=>(
+              <FamousProducts key={index} famous_product={famous_product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+       {/* Popular Products Slider */}
+       <section className="popular-wrapper bg-light py-5">
+        <div className="container">
+          <h2 className='py-3'>Our Popular Products</h2>
+          <div className="d-flex flex-nowrap gap-3 overflow-hidden">
             {featured_collection.map((product,index)=>(
               <ProductCard product={product} key={index} />
             ))}
@@ -190,11 +253,11 @@ function Home() {
       </section>
 
       {/* Marquee Slider */}
-      <section className="marque-wrapper home-wrapper-2 py-5">
+      <section className="marque-wrapper bg-light py-5">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="marque-inner-wrapper card-wrapper">
+              <div className="marque-inner-wrapper  shadow bg-white p-3">
                <MarqueeContainer logos={marquee_logos} />
               </div>
             </div>
@@ -203,7 +266,7 @@ function Home() {
       </section>
 
       {/* Blogs Container */}
-      <section className="blow-wrapper py-5 home-wrapper-2">
+      <section className="blow-wrapper py-5 bg-light">
         <div className="container">
           <div className="row">
             <h2 className='py-3'> Our Latest Blogs</h2>
